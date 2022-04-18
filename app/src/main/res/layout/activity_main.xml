@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_above="@id/second"
+        android:layout_marginBottom="30dp"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_above="@+id/mail"
+        android:layout_marginBottom="70dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Выполните вход \n или зарегестрируйтесь."
+        />
+
+
+    <EditText
+        android:id="@+id/mail"
+        android:hint="Введите вашу почту"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/white"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="Введите пароль"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:padding="7dp" />
+
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Забыл пароль?"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="130sp"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:layout_alignParentBottom="true"
+            />
+
+            <TextView
+                android:layout_alignTop="@+id/forget"
+                android:layout_toEndOf="@+id/forget"
+                android:id="@+id/here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нажми сюда"
+                android:textSize="19sp"
+                android:textColor="@color/orange"
+
+                />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/grey"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
